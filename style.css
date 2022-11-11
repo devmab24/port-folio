@@ -14,9 +14,9 @@ p{
   position: relative;
   background-color:#434446;
   width:275px;
-  height:375px;
+  height: 395px;
   border-radius:15px;  
-  margin-top:40px;
+  margin-top:30px;
   margin-left: 500px;
   margin-right: 100px;
 }
@@ -29,7 +29,7 @@ p{
     margin-left: 5px;
     margin-top: 5px;
 }
-  
+
 .red{
     background-color:red;
 }
@@ -46,30 +46,40 @@ input{
     color:white;
     width: 260px;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 9px;
     margin-left:5px;
-    margin-bottom: 15px;
+    margin-bottom: 31px;
     font-size: 40px;
     text-align:right;
     background-color:#434449;
     border:none;
 }
+
 .fuction-keys{
     display: flex;
 }
 
 .fuction-keys button{
-    margin-top: 20px;
+    margin-top: 5px;
     width: 67.5px;
     height: 57px;
     margin: 0.5px;
     color: white;
     background-color:#525253;
     border: none;
+    cursor: pointer;
+}
+
+.fuction-keys button:hover{
+    background-color: #474747;
 }
 
 .fuction-keys .operator{
     background-color:orange;
+}
+
+.fuction-keys .operator:hover{
+    background-color:rgb(168, 110, 2);
 }
 
 .numbers .rows{
@@ -81,6 +91,10 @@ input{
     border: none;
 }
 
+.rows .operator:hover{
+    background-color:rgb(168, 110, 2);
+}
+
 .rows button{
     width: 67.5px;
     height: 57.5px;
@@ -89,6 +103,11 @@ input{
     background-color: #929292;
     color:white;
     font-size: 25px;
+    cursor: pointer;
+}
+
+.rows button:hover{
+    background-color: #7c7c7c;
 }
 
 .rows .zero{

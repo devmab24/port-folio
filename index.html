@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CALCULATOR</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 <body>
     <p>CALCULATOR</p>
@@ -17,44 +18,44 @@
         </div>
 
         <div class="input">
-            <input type="integer" value="0">
+            <input type="text" id="inputext" placeholder="0">
         </div>
 
-        <div class="keys">
-            <div id="operands&operators">
+        <div class="buttons">
+            <div id="operations">
                 <div class="fuction-keys">
-                    <div><button id="fuction">AC</button></div>
-                    <div><button id="fuction">+/-</button></div>
-                    <div><button id="fuction">%</button></div>
-                    <div><button class="operator">÷</button></div>
+                    <div><button onclick="clr()" id="fuction">AC</button></div>
+                    <div><button onclick="calculate('+/-')" id="fuction">+/-</button></div>
+                    <div><button onclick="percent('%')" id="fuction">%</button></div>
+                    <div><button onclick="calculate('/')" class="operator">÷</button></div>
                 </div>
 
                 <div class="numbers">
                     <div class="rows">
-                        <div><button>7</button></div>
-                        <div><button>8</button></div>
-                        <div><button>9</button></div>
-                        <div><button class="operator">x</button></div>
+                        <div><button onclick="calculate('7')">7</button></div>
+                        <div><button onclick="calculate('8')">8</button></div>
+                        <div><button onclick="calculate('9')">9</button></div>
+                        <div><button onclick="calculate('*')" class="operator">*</button></div>
                     </div>
 
                     <div class="rows">
-                        <div><button>4</button></div>
-                        <div><button>5</button></div>
-                        <div><button>6</button></div>
-                        <div><button class="operator">-</button></div>
+                        <div><button onclick="calculate('4')">4</button></div>
+                        <div><button onclick="calculate('5')">5</button></div>
+                        <div><button onclick="calculate('6')">6</button></div>
+                        <div><button onclick="calculate('-')" class="operator">-</button></div>
                     </div>
 
                     <div class="rows">
-                        <div><button>1</button></div>
-                        <div><button>2</button></div>
-                        <div><button>3</button></div>
-                        <div><button class="operator">+</button></div>
+                        <div><button onclick="calculate('1')">1</button></div>
+                        <div><button onclick="calculate('2')">2</button></div>
+                        <div><button onclick="calculate('3')">3</button></div>
+                        <div><button onclick="calculate('+')" class="operator">+</button></div>
                     </div>
 
                     <div class="rows">
-                        <div><button class="zero">0</button></div>
-                        <div><button class="dot">.</button></div>
-                        <div><button class="operator equal">=</button></div>
+                        <div><button onclick="calculate('0')" class="zero">0</button></div>
+                        <div><button onclick="calculate('.')" class="dot">.</button></div>
+                        <div><button onclick="result()" class="operator equal" id="result">=</button></div>
                     </div> 
                 </div>
             </div>
